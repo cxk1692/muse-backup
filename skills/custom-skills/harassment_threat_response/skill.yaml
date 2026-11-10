@@ -1,0 +1,28 @@
+name: harassment_threat_response
+title: Harassment Threat Response
+description: Respond to harassment and threats by closing evidence collection once it is enough, blocking first, protecting sleep, and describing police and legal steps without overpromising.
+category: Privacy
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - message:ea678d47-5ab7-41fd-83b4-4f7bbd33515c
+  - assistant-msg-a8b60364-f8bd-444a-829b-7036487d92c0
+  - assistant-msg-6f0ebfb3-ed42-44bc-8349-129eb8c861b9
+  - message:f9fc5d65-4efc-4e16-ac9d-e71120eabbb9
+  - message:621e4a02-d5f4-4c06-987d-084f3a4c1ebc
+  - assistant-msg-729e4147-819c-4d62-946a-29500ce0c1be
+  - message:7729f7f2-02b0-4b45-8f17-915b1024d7f4
+  - message:5e92bcac-a483-4d0d-9655-0e51f94706ce
+  - assistant-msg-0274173a-c1d7-4947-8182-30e6bbbfdd12
+  - assistant-msg-5fded0cd-fa34-4d0f-b274-8e74649f55ec
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In the next 14 days, in every harassment or threat episode, evidence collection is declared closed once sufficient for the stated route, no further unblocking or listening for evidence is advised, no undeliverable promise is traded for calm, and no police step is presented as a reliable path to detention or a crime. If no such episode runs in the window, the result is inconclusive rather than a failure.
+    window_days: 14
+  needs_review: false
+  rationale: The assistant declared threat evidence complete yet collection continued until the user could not sleep, then admitted pushing recording caused that night. A promise to help unblock bought only brief calm before threats resumed, and a warning then repeat framing overpromised detention while the outcome was administrative registration only and no detention. No existing skill covers this loop and skill search confirmed the gap, while the AGENTS.md line covers only evidence sufficiency, so a dedicated reusable skill addresses the repeated mechanism.
+  review_after: 2026-11-20T03:42:55.162669+00:00
+  reviewed_at: 2026-11-06T03:42:55.162669+00:00
+  run_id: sirun_151be3cc77cb45f69b0c461dfc6b3afd

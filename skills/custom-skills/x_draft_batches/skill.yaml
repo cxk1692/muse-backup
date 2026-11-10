@@ -1,0 +1,23 @@
+name: x_draft_batches
+title: X Draft Batches
+description: Deliver a batch of short interactive discussion X drafts ready to copy, with no topic repeated from earlier batches the same day and each topic broad enough for a stranger to answer.
+category: Communication
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - message:0edb0042
+  - message:2947420b
+  - scheduler_job:x-posts-morning
+  - scheduler_job:x-posts-evening
+  - scheduler_job:x-posts-bedtime
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In the next 14 days, every delivered X batch contains zero topics already used in an earlier batch that same day including close variants, zero topics the user rejects as too narrow or too precise, and each draft delivered as a separate ready to copy post. If no batch runs in the window, the result is inconclusive rather than a failure.
+    window_days: 14
+  needs_review: false
+  rationale: The 2026-10-31 evidence shows the same batch quality failure recurring across batches, not a one-off slip. The user said pension and digital RMB directions had been sent 3 times across the dispute, surprise rewrite, abstract joke and morning batches (message:0edb0042), and the agent promised pre-batch dedup against same-day topics. The same day the user separately corrected drafts as too precise and too narrow, requiring broad universal topics a stranger can answer (message:2947420b). Batch headers in the packet also admitted relying on hot-list aggregators instead of entering actual comment sections, despite the standing instruction to check what commenters are actually arguing about. The system social_publishing skill covers planning, approving and publishing the agent's own posts and varying themes for a series, but it gives no pre-delivery dedup procedure against same-day batches, no close-variant test, no breadth test for offline drafts, and no requirement to check actual comments rather than hot lists. This skill codifies those four checks as one batch gate. The deterministic repeated handoff suppression candidates were rejected for this proposal because the ledger shows 0 recurring, validation and replay failures for the listed objectives, so suppression alone names no skill gap, and the existing douyin_comment_campaign skill was left untouched because it is still inside its measurement window to 2026-11-13.
+  review_after: 2026-11-14T03:16:12.346726+00:00
+  reviewed_at: 2026-10-31T03:16:12.346726+00:00
+  run_id: sirun_286e74ec8bf6457896776c9a4fb1c2fa

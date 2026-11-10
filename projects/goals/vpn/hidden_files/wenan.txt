@@ -1,0 +1,17 @@
+文案库 Wenan（API + 管理页）
+管理页: http://3.107.116.153/wenan/
+管理密码: C0yPmSBuDgiRj2Zw
+
+API 基础地址: http://3.107.116.153/wenan/api
+API 密钥（请求头 X-API-Key 或 Authorization: Bearer）: wk_9bB2pOO6LV8hWaYLvclmv9a2jndBsAlE
+
+服务: systemd wenan（127.0.0.1:8078，/opt/wenan，SQLite /opt/wenan/data/wenan.db）
+
+接口:
+- GET    /api/items?q=关键词&tag=标签&page=1&size=20   列表/搜索
+- GET    /api/items/<id>                              取一条
+- GET    /api/random?tag=标签                          随机一条
+- POST   /api/items  {"title":"","content":"","tags":""}  新增
+- PUT    /api/items/<id> {...}                       修改
+- DELETE /api/items/<id>                              删除
+部署时间: 2026-11-01。测试数据已清空，库为空。

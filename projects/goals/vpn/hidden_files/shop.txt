@@ -1,0 +1,9 @@
+Dujiao-Next 店铺（AI 会员代充，kuai 二级代理）
+店铺前台: http://3.107.116.153:8080/
+管理后台: http://3.107.116.153:8080/admin
+管理员账号: admin
+管理员密码: Kj!7e1NyMCnj5PWB#9
+版本: Dujiao-Next v1.5.1（原独角数卡官方继任版，Go 单文件 + SQLite）
+服务: systemd dujiao，目录 /opt/dujiao-next，数据库 /opt/dujiao-next/db/dujiao.db
+状态（2026-10-30 23:32）: 已安装运行、后台可登录；待办：开放安全组 8080、上家对接、支付配置、上架商品。
+注意: 后台地址 /admin 为默认路径，后续可改随机路径降低扫描风险。

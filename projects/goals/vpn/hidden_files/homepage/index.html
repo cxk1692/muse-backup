@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>韁雨势 · 个人主页</title>
+<meta name="description" content="二线城市普通打工人，从零学 AI。我在记录一件事：AI 能不能改变普通人的命运。">
+<style>
+  :root{
+    --bg:#0a0a0b; --fg:#f2f2f0; --dim:#9a9a94; --line:#232324; --card:#111112;
+    --accent:#e8ff47;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.7;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:12vh 24px 64px}
+  .eyebrow{font-size:13px;letter-spacing:.35em;color:var(--dim);text-transform:uppercase;margin-bottom:28px}
+  .eyebrow b{color:var(--accent);font-weight:600}
+  h1{font-size:clamp(56px,11vw,104px);font-weight:800;line-height:1.05;letter-spacing:.01em}
+  h1 .thin{display:block;font-size:clamp(20px,4.4vw,30px);font-weight:400;color:var(--dim);margin-top:26px;line-height:1.6;letter-spacing:.02em}
+  h1 .thin strong{color:var(--fg);font-weight:600}
+  .rule{height:1px;background:var(--line);margin:56px 0}
+  h2{font-size:13px;letter-spacing:.35em;color:var(--dim);text-transform:uppercase;margin-bottom:22px;font-weight:600}
+  p.about{font-size:17px;color:#d8d8d2;max-width:34em}
+  p.about + p.about{margin-top:14px}
+  .links{display:flex;flex-direction:column;gap:14px}
+  a.card{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:20px 22px;text-decoration:none;color:var(--fg);
+    transition:border-color .2s, transform .2s;
+  }
+  a.card:hover{border-color:#3d3d3a;transform:translateY(-1px)}
+  .card .name{font-size:18px;font-weight:700}
+  .card .desc{font-size:14px;color:var(--dim);margin-top:2px}
+  .card .arrow{font-size:20px;color:var(--accent);flex:none}
+  .card.static{cursor:default}
+  .copyline{font-size:13px;color:var(--dim);margin-top:10px}
+  code{background:#1b1b1c;border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:13px;color:var(--accent)}
+  footer{margin-top:64px;font-size:13px;color:#5c5c58;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  @media (max-width:520px){ .wrap{padding-top:9vh} }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">KUAI <b>·</b> PERSONAL PAGE</div>
+    <h1>韁雨势
+      <span class="thin">二线城市普通打工人，从零学 AI。<br>我在认真记录一件事：<strong>AI 能不能改变普通人的命运。</strong></span>
+    </h1>
+
+    <div class="rule"></div>
+
+    <h2>关于我</h2>
+    <p class="about">曾经晚上跑代驾，现在全职做自媒体。白天用 AI 搭自己的工作流 — 选题、脚本、生图、做视频、配乐、复盘，一个人干过去一个小团队的活。</p>
+    <p class="about">不讲大道理，只发真实过程：踩过的坑、算过的账、和每天的进度，都在下面这些地方更新。</p>
+
+    <div class="rule"></div>
+
+    <h2>找到我</h2>
+    <div class="links">
+      <a class="card" href="https://x.com/JiangS86311" target="_blank" rel="noopener">
+        <div>
+          <div class="name">X（推特）· @JiangS86311</div>
+          <div class="desc">主阵地，每天更新 AI 实践和互动讨论</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <div class="card static">
+        <div>
+          <div class="name">抖音 · 代驾趣闻</div>
+          <div class="desc">代驾日常和 AI 做视频的记录，抖音号 24741317349</div>
+        </div>
+        <div class="arrow">◐</div>
+      </div>
+      <a class="card" href="https://muse.ai/join" target="_blank" rel="noopener">
+        <div>
+          <div class="name">Muse · 我每天在用的 AI</div>
+          <div class="desc">运营账号、生成视频图片和音乐，都靠它放大一个人的力气</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+    <p class="copyline">用我的邀请码 <code>QM0H36</code> 加入，48 小时内在「设置」里兑现，咱俩各得 10 亿词元。</p>
+
+    <footer>
+      <span>© 2026 韁雨势</span>
+      <span>本站就跑在我自己搭的服务器上</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "bootstrap_seeded_at": "2026-10-29T16:01:17Z",
+  "onboarding_completed_at": "2026-10-29T16:09:36Z",
+  "onboarding_presentation_locale": "zh-CN",
+  "onboarding_client_timezone": "Asia/Shanghai",
+  "onboarding_flow_active": false,
+  "onboarding_initial_message_enqueued_at": "2026-10-29T16:09:36Z",
+  "onboarding_chat_completed_at": "2026-10-29T16:09:36Z",
+  "new_user_chat_turn_count": 10,
+  "onboarding_name_widget_id": "widget-e4f038dd-e7f3-5e42-a8fa-f872f1a10663",
+  "reset_epoch": 1,
+  "reset_at_ms": 1793289677000,
+  "two_factor_upsell": {
+    "outcome": "offered",
+    "settled_at": "2026-10-30T06:56:43Z"
+  }
+}

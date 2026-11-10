@@ -1,0 +1,52 @@
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    root /var/www/html;
+    index index.html;
+    server_name _;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    location = /ppx {
+        return 301 /ppx/;
+    }
+    location /ppx/ {
+        proxy_pass http://127.0.0.1:8790/;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Connection "";
+        proxy_connect_timeout 5s;
+        proxy_read_timeout 30s;
+        client_max_body_size 16k;
+    }
+    location = /wenan {
+        return 301 /wenan/;
+    }
+    location /wenan/ {
+        proxy_pass http://127.0.0.1:8078/;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Connection "";
+        proxy_connect_timeout 5s;
+        proxy_read_timeout 30s;
+        client_max_body_size 256k;
+    }
+    location = /nb/login {
+        limit_req zone=nblogin burst=2 nodelay;
+        proxy_pass http://127.0.0.1:8077/login;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+    location /nb/ {
+        limit_req zone=nbgeneral burst=20 nodelay;
+        proxy_pass http://127.0.0.1:8077/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}

@@ -1,0 +1,109 @@
+# Study Notes - 2026-11-04 - 提升体能，坚持力量训练
+<!-- studying-run-start: 2026-11-04T03:01:14Z -->
+
+## Goal snapshot
+
+- Goal: 提升体能，坚持力量训练 (`goal_04facbdfb4ef`, slug `goal-2`, category health, kind habit, status active).
+- What kuai is trying to change: build a sustainable, low-barrier strength-training habit that improves general fitness, separate from the sleep goal 改善睡眠和精力.
+- Starting point, as kuai stated it on 2026-10-30: almost no prior training, just beginning. Intensity and load remain secondary; completing a first small session and learning the movements are the point of week 1.
+- Selection trigger for this study pass: `review_due`. Mastery band in the task plan: novice. Mastery is not yet estimated: no session has been observed or reported yet, and no numeric estimate should be fabricated before at least three observed performances exist.
+- Run start: 2026-11-04T03:01:14Z, which is Wednesday 2026-11-04 11:01:14 CST (Asia/Shanghai) as given in the assignment.
+
+## What changed since the 2026-11-03 study note
+
+In substance, nothing changed; only the silence lengthened by one more day:
+
+- The goal record's timeline is unchanged since its last entry at 2026-10-30T14:37:57Z, and its current state still reads "First session was due Sunday, November 1, on the scaled-down push-up and plank plan, with no result reported yet." No session report, movement change, date change, or barrier report arrived in the evidence checked for this pass.
+- The recent main-chat window (2026-11-03T02:56:23Z to 2026-11-04T03:03:13Z, plus the run's chunked conversation through 2026-11-04T02:53:42Z) contains no mention of this goal. The turns in that window are about the house plastering job with contractor 徐来虎, X drafts, the Douyin patrol drafts, and a China Mobile company-registered SIM cancellation question. No turn mentions push-ups, plank, strength training, or a training session.
+- So the honest status is unchanged from 2026-11-03, now three days past the scheduled date: outcome unknown. The session may have been done and not reported, done partially, or skipped. Recording it as missed would invent a fact; recording it as done would invent one too. The next pass must ask, not assume.
+- Everything else is unchanged: the two-movement plan, the safety rules, the empty briefing history (no prior brief exists for this goal — the briefs directory under `workspace/goals/goal-2/briefs/` is empty), and the open gaps (no time-of-day cue chosen, no push-up version confirmed, no confidence rating collected, no second-session date agreed).
+- Context, not cause: the same window was again dominated by the house job — on 2026-11-04 in main chat kuai reported the contractor's fragmented progress messages, a new round of payment-terms negotiation (a daily 150 yuan living-expense arrangement capped at the first 1500 yuan node, with waiting days excluded, as kuai stated it at 2026-11-04T02:34:43Z and 2026-11-04T02:38:20Z), and at 2026-11-04T02:42:58Z that he was fed up with communicating with the contractor. That is a plausible competing demand on kuai's attention and energy, but it is not evidence about the training session — do not record it as the reason the session did or did not happen, and do not count watching or negotiating construction work as kuai's own training.
+- The sleep log belongs to the sleep goal, not to this goal, and no training effect should be inferred from any sleep result. Likewise, kuai staying up past 01:00 on the night of 2026-11-03 to 2026-11-04 (noted in main chat on 2026-11-04) is sleep-goal context, not training evidence.
+
+## Prerequisite check
+
+- In place: method (strength training), setting (at home, bodyweight, no equipment assumed), a concrete two-movement starter routine chosen by kuai himself, and one dated first-session slot (Sunday 2026-11-01, now past).
+- Gap still open, first thing to close: the outcome of the first slot is still unknown, and the time-of-day cue for the session was still never chosen. The next useful question is a single factual one — did the Sunday session happen, and if so, when and how — not a larger routine.
+- Safety prerequisites, as already set in main chat: no old injury, discomfort, medical condition, or medication was reported. Do not assume any of these. If kuai reports sharp pain, joint pain, an old injury, or a medical concern, the correct move is to stop that movement and suggest a qualified professional, not to adapt the plan into rehabilitation or treatment advice. This note is general wellness support only.
+- A second gap to close at the first report: which push-up version kuai actually used (standard, kneeling, or wall), since the plan deliberately leaves that choice to what he can perform with stable form.
+
+## Retrieval prompt
+
+From memory, state the core idea of this goal in kuai's own terms — beginner, at-home, bodyweight strength training, now reduced to just push-ups and plank, at low load, with the first session having been scheduled for Sunday 2026-11-01 — then check it against the worked example below. A mismatch worth noting would be any drift back toward the earlier five-movement, 20-minute routine, toward intensity, weight, gym equipment, or daily training, none of which kuai agreed to after his 2026-10-30 corrections.
+
+## Worked example: the current regressed session
+
+This is the session the main agent already gave kuai on 2026-10-30 at 14:38:02 UTC. It is preserved here so a later study does not re-derive it or revert to the earlier version, not as new advice in this pass:
+
+- Total time: under 10 minutes.
+- Step 1 — Push-ups: choose the version kuai can perform with stable form — standard if possible, kneeling if not, wall if that is what it takes. 5 repetitions per set, 2 sets, with ample rest between sets.
+- Step 2 — Plank: if a full plank cannot be held, use a kneeling plank. 10–20 seconds per set, 2 sets.
+- Stop signals: stop at once if the hips sag, the lower back begins to ache, or sharp or joint pain appears. Do not push through those signals.
+- Load rule: finish with repetitions still in reserve; do not train to failure.
+- What comes after, as stated in main chat: once these two movements feel smooth, leg movements can be added later. That is a later step, not part of this session.
+- Superseded versions that must not be revived: the original about-20-minute, 2-round routine (chair squats, wall push-ups, glute bridges, bird-dog, calf raises) and the intermediate 2026-10-30 reduced version (1 round of sit-to-stand, wall push-ups, small glute bridges, simplified bird-dog, wall calf raises).
+
+## Practice task
+
+The practice task remains the first session itself, now in follow-up form rather than as a same-day reminder: ask whether the Sunday 2026-11-01 session happened, and if so, report back only what happened — completed or not, which push-up version was used, how many repetitions were actually done, how long the plank holds lasted, which part felt awkward, and any pain or barrier. If it did not happen, the report to seek is what got in the way (time, energy, competing load that day, or something about the two movements). Immediate feedback after each step is not something kuai has been asked to do mid-session; the useful feedback point is the report after the session, kept to one adjustment at a time.
+
+## Feedback rubric
+
+When kuai reports the session, keep feedback task- and process-focused:
+
+- Name what was correct: for example, that the session was completed at the planned low load, that the regressed version matching his form was chosen, or that a movement was stopped at a pain or form-break signal.
+- Name the one most useful next adjustment: for example, a single form cue, a rest adjustment, or a version change for one movement — not a list of corrections, and not a return to the five-movement routine.
+- Avoid praise, shame, or overload, and avoid treating a session that did not happen as failure. A session that did not happen is evidence about timing, load, or competing demands on that day, and the next move is to adjust the cue or the slot, not to add volume to make up for it.
+
+## Transfer challenge
+
+The one real situation where this goal applies in kuai's current life is an ordinary day at home, where the routine needs no gym, equipment, or travel. That is the transfer test: if the routine cannot be done in that setting, on a day already carrying other work, it is too large for week 1. The open question is now retrospective as well as prospective: which at-home moment on Sunday 2026-11-01, if any, did the session actually attach to, and which moment should the next session attach to?
+
+## Confidence check
+
+No confidence rating has been collected yet. After the first session is reported on, the useful check is to ask kuai to rate confidence in repeating the routine, then compare that rating with what actually happened in the session (completed, partially completed, or blocked, and why). Do not infer confidence from enthusiasm in chat, and do not use a confidence rating to justify increasing load.
+
+## What this study added, and what it did not
+
+- Added, relative to the 2026-11-03 note: only the timing update — the first session's date (Sunday 2026-11-01) is now three days past, and as of Wednesday 2026-11-04 11:01:14 CST still no report of its outcome exists in the goal record or in the recent main-chat window, so its outcome remains unknown rather than assumed. The silence itself is now the sharpening fact: a third silent pass makes a single direct question more valuable than another silent pass, but it still does not convert "unreported" into "missed."
+- Confirmed, against the goal record and the conversation: the goal remains distinct from sleep, beginner-level, at-home bodyweight, and low-barrier; the current state in the goal record matches the main-chat plan adopted on 2026-10-30.
+- Did not add a new routine, a new progression, equipment, a new target, a session result, or a second-session date. No second-session date has been agreed; the main agent's earlier suggestion of the following Tuesday was presented as an option, not confirmed by kuai, and must not be recorded as scheduled.
+- That is why the material does not earn a new Letter: the Letter's centre would be either the same two-movement plan kuai already read in main chat on 2026-10-30 and was reminded of on 2026-11-01, or a question ("did you do Sunday's session?") whose answer is not yet known — neither is new learning for the user.
+
+## Support implications for the next pass
+
+- First ask whether the Sunday 2026-11-01 session happened, and if not, what got in the way. Keep the ask to one short question; do not re-send the full routine as if it were new, do not revert to the five-movement version, and do not describe the session as missed until kuai says so.
+- If the session was completed without a pain signal, keep the same two movements and volume for the next session. Do not progress load on the basis of a single completed session.
+- If a specific movement cannot be done at home, that is the trigger for a targeted search in a later pass; generic beginner guidance in this pass would not have changed the plan and would risk reintroducing volume kuai just rejected.
+- Watch for the correction pattern kuai has shown elsewhere: he corrects precisely and expects the correction to stick. If he changes a date, a movement, or the setting again, record the new version and do not revert to the earlier version in later notes.
+- Do not propose gym equipment, heavy loads, daily training, or an aggressive progression while the goal is in this novice, low-barrier phase.
+- Do not count the house job's activity, or the contractor crew's work, as kuai's training.
+- Do not fold the house-job payment negotiation (daily 150 yuan, capped at 1500 yuan, waiting days excluded) into this goal; it is recorded here only as competing-load context, and its details belong to the house record, not to training.
+
+## Open questions
+
+- Did the first session on Sunday 2026-11-01 happen, and if so, at what time of day, which push-up version was used, how many repetitions were done, and how long were the plank holds?
+- If it did not happen, what got in the way — time, energy, competing load on Sunday 2026-11-01, or something about the two movements?
+- Which movement, if either, felt awkward or produced soreness versus pain?
+- Are there any old injuries, joint issues, or space constraints at home that would require a movement swap? None have been reported; this remains unknown, not assumed absent.
+- When will the second session be, and what barrier, if any, recurs after it — timing, fatigue, boredom, or a specific movement? That pattern, not a single session, should drive any week-2 change.
+
+## Next review
+
+- Next review in the task plan: 2026-11-05T03:01:14.503897385Z.
+- The more decision-relevant checkpoint is the report on the first session itself on Sunday 2026-11-01, now outstanding three days after its date, with its outcome unknown rather than confirmed.
+
+## Already Covered in Main Chat
+
+None found
+
+## Research Trajectory
+
+- *User context and memory*: goal record for 提升体能，坚持力量训练 via `user_goal.get` (goal_04facbdfb4ef, slug goal-2), including its timeline entries dated 2026-10-30 and its empty briefing history, with the latest entry at 2026-10-30T14:37:57Z adopting the push-up and plank version; the run handoff and `MEMORY.md` confirming the same regressed plan and that the first session was due Sunday 2026-11-01 with no result reported yet.
+- *Prior trajectories reviewed*: the prior study notes `workspace/goals/goal-2/agent_notes/2026-11-03/goal-2.md` (read in full), `workspace/goals/goal-2/agent_notes/2026-11-02/goal-2.md`, `workspace/goals/goal-2/agent_notes/2026-11-01/goal-2.md`, and `workspace/goals/goal-2/agent_notes/2026-10-30/goal-2.md`; the 2026-11-03 note already records the current two-movement plan, the Sunday 2026-11-01 first-session date, and the unknown-outcome status, and its safety floor, low-barrier framing, and unestimated-mastery rule still hold. The older main-chat coverage (kuai's 2026-10-30 difficulty feedback and two-movement proposal, and the main agent's 2026-10-30 plan and 2026-11-01 reminder) is preserved in those notes, not in this window's conversation.
+- *Repetition search*: searched the goal's own prior notes under `workspace/goals/goal-2/agent_notes/` and its prior briefs under `workspace/goals/goal-2/briefs/` with six keyword variants — 俯卧撑, 平板支撑, 力量训练, 体能, push-up, plank — plus a listing of both directories' filenames; hits were only the prior notes themselves (2026-10-30 through 2026-11-03 notes), the briefs directory is empty so no prior brief exists, and no hit contains a session result, so today's topic — the same first-session plan, now three days past its date but still unreported — is already covered by the prior notes and by earlier main chat.
+- *Connected user data*: no new wearable, sleep, or workout read was made for this goal in this pass; the baseline rests on kuai's self-report, and the sleep log and the house-job progress messages were deliberately not used as training evidence.
+- *Scaffolds and support tactics*: no category scaffold was applied as a new intervention in this pass; the safety floor used is the one already in the goal record and main chat (general wellness only, stop on sharp or joint pain or form breakdown, suggest a qualified professional for pain or medical concerns, no rehabilitation or maximal-loading advice), and no learning-style claim was made.
+- *External sources viewed*: none in this pass, by design — the material change since the last note is only one more day passing with no report, not a barrier or question that research could answer, and generic web guidance would not have changed the plan, the safety boundaries, or the material-newness ruling.
+- *Image references checked*: none relevant to this goal.
+- *Searches skipped or unavailable*: no web search was run for a new routine or progression, because no session has yet been reported under the two-movement plan and no specific barrier has surfaced that the current routine does not already address; a targeted search should be run in a later pass only if the Sunday 2026-11-01 report surfaces such a barrier.

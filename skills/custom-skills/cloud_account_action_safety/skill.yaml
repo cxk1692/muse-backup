@@ -1,0 +1,23 @@
+name: cloud_account_action_safety
+title: Cloud Browser Account Actions
+description: Act safely on a personal account from a cloud browser by warning about filtering risk, getting explicit approval, rechecking visibility after a delay, and switching to user device posting after a failure.
+category: Privacy
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-62fa4907-333c-649d-ed2f-e6a57864afbb
+  - assistant-msg-4b4eedbc-bb88-4946-9624-49b49a877471
+  - assistant-msg-4601c7fa-6b96-6af4-e033-512bb95fb4ab
+  - assistant-msg-917a96ff-bb77-96e5-c2b2-fa07fb6c9f13
+  - scheduler_job:douyin-daily-patrol
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In the next 14 days, every cloud browser login, post, comment, or account settings action is preceded by a datacenter filtering warning and explicit user approval, every sent item receives a delayed visibility recheck, and after any survival failure work switches to draft only and user device posting until the user reauthorizes cloud action. If no such action runs in the window, the result is inconclusive rather than a failure.
+    window_days: 14
+  needs_review: false
+  rationale: The same datacenter egress cause recurs across platforms in this window, and the existing immediate check does not catch it. A Douyin spot check found only 2 of 6 sampled comments still visible with 0 invites resulting, after an immediate count and visibility check at send time had looked successful, and the assistant then pledged to stop touching the Douyin account and to draft only. The same pattern appears as repeated first comment SMS gates, a twice shelved X login, and a WeChat account handover after datacenter IP disclosure, while the Douyin daily patrol schedule still points at cloud posting. The existing douyin_comment_campaign skill covers immediate verification, targeting, and style, and the x_draft_batches skill covers leaving X posting to the user, but neither requires a pre action filtering warning, a delayed recheck, or a switch to draft only and user device posting after a survival failure. Both managed skills are left untouched because they are still inside their measurement windows to 2026-11-13 and 2026-11-14, and only 2 learned skills are active so no consolidation is triggered. The deterministic repeated handoff suppression and memory recurring failure candidates were rejected because they name no skill gap, cron runs show 0 failures, and the 51 tool failures carry only call ids with no distinct instruction gap beyond this filtering pattern.
+  review_after: 2026-11-15T05:33:23.760260+00:00
+  reviewed_at: 2026-11-01T05:33:23.760260+00:00
+  run_id: sirun_120812262de443edae59eb9fa6dd473d

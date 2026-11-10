@@ -1,0 +1,24 @@
+name: fragmented_screenshot_reading
+title: Fragmented Screenshot Reading
+description: Read fragmented chat and transfer screenshots literally before interpreting them, so replies rest on verified direction and role rather than inferred motive.
+category: Communication
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - message:8cc86116-aca5-479a-9a11-74fe1fa38ce7
+  - message:8c9cf72c-2393-4510-8097-802e2fee9ace
+  - assistant-msg-eee24ea6-e054-474f-b87d-5d1396850fb2
+  - assistant-msg-60de4208-68c7-43c1-9a0e-ae253505bec0
+  - message:feeaaffe-5208-49f9-b76e-b35d180c859e
+  - assistant-msg-27b68c82-6bf0-4938-98ae-77a1547efbd2
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In the next 14 days, every interpretation of a user shared chat or transfer screenshot lists payer, payee, role, and direction before any motive claim, zero motive claims rest on a reversed direction or wrong role, and no user correction of direction or role is needed. If no such screenshot task runs in the window, the result is inconclusive rather than a failure.
+    window_days: 14
+  needs_review: false
+  rationale: 'In the 2026-11-04 morning transcript the assistant interpreted fragmented transfer screenshots by building motive layers before verifying basic facts. The first interpretation in assistant-msg-eee24ea6-e054-474f-b87d-5d1396850fb2 rested on a payer direction and role that the user then corrected, the second interpretation in assistant-msg-60de4208-68c7-43c1-9a0e-ae253505bec0 kept an advance implication after the role correction, and only the third interpretation in assistant-msg-27b68c82-6bf0-4938-98ae-77a1547efbd2 admitted the direction was reversed and retracted the inferred layer. The failure is therefore repeated within one session and is a method gap, not a single slip: transcribe literally, separate observation from inference, and restart from corrected facts. Skill search found no existing skill covering this: business_finance counts transactions against books, messaging carries a conversation, and media-library inspects a library, but none teaches literal screenshot transcription before motive interpretation. Only 3 learned skills are active, so no consolidation is triggered, and the existing managed skills are left untouched inside their measurement windows to 2026-11-13, 2026-11-14, and 2026-11-15. The deterministic repeated handoff suppression and memory recurring failure candidates were rejected because they name no screenshot skill gap, cron runs show 0 failures, and the 71 tool failures carry only call ids with no distinct instruction gap beyond this pattern. One proposal is made to preserve attribution.'
+  review_after: 2026-11-18T02:56:23.104592+00:00
+  reviewed_at: 2026-11-04T02:56:23.104592+00:00
+  run_id: sirun_181a583e2f0e4d56b7083d5b1535243c

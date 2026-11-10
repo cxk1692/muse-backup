@@ -1,0 +1,24 @@
+name: douyin_comment_campaign
+title: Douyin Comment Campaigns
+description: Run a verified comment campaign under other creators' Douyin posts without guessing targets or repeating template copy.
+category: Communication
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - message:assistant-msg-1070392c-cd0a-3a52-2c74-227836bd8c55
+  - message:assistant-msg-63a70f86-5932-406c-ac0b-de0325a8a238
+  - message:assistant-msg-18323828-8421-487f-bba2-87c2c4b5b763
+  - message:assistant-msg-a7af6337-74f7-4d49-a35f-2a5f980cee49
+  - message:assistant-msg-c6ae8874-dd05-43d4-b5ab-f8230582d51c
+  - message:assistant-msg-f374401c-69e3-5783-92ed-cf4c8993c430
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In the next 14 days, any Douyin comment round reports a verified count and visibility check for each sent comment, zero comments to an ambiguous or off-topic post, no identical template repeated across posts in a round, and the first-session code expectation stated before the round starts. If no round runs in the window, the result is inconclusive rather than a failure.
+    window_days: 14
+  needs_review: false
+  rationale: Two Douyin rounds in the 2026-10-30 packet show the same gaps recurring rather than one-off errors. The second round report counts 19 sent and 2 skipped, with the skips correctly avoiding an off-topic product with a similar name and an ambiguous same-name account, and it notes verification returned on the first post of the new session after the earlier session had passed. The user then corrected the style mid-round to customized comments in a human voice, leaving 28 earlier template comments against 1 customized one, and a backup comment was deleted and reposted under the new style without that retroactive step having been explicitly approved in advance. The existing social_publishing skill covers approving and verifying the agent's own posts, but it does not cover commenting under others' posts, per-session first-comment checks, ambiguous-target skips, or applying a style correction only to unsent comments. This skill codifies those four mechanisms. The deterministic repeated_handoff_suppression candidates for memory and relationships were rejected because the ledger shows 0 recurring, validation, and replay failures for those objectives, so suppression alone does not name a skill gap. No Douyin connector exists in the inventory and no managed custom skill covers this workflow, so a new managed skill is the correct form.
+  review_after: 2026-11-13T11:04:56.253469+00:00
+  reviewed_at: 2026-10-30T11:04:56.253469+00:00
+  run_id: sirun_a42578f2c7e246ff95a6aba09cecccf2

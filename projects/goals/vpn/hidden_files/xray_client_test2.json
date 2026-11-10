@@ -1,0 +1,66 @@
+{
+ "log": {
+  "loglevel": "warning"
+ },
+ "inbounds": [
+  {
+   "tag": "socks-in",
+   "listen": "127.0.0.1",
+   "port": 11080,
+   "protocol": "socks",
+   "settings": {
+    "udp": true
+   }
+  }
+ ],
+ "outbounds": [
+  {
+   "tag": "vless-out",
+   "protocol": "vless",
+   "settings": {
+    "vnext": [
+     {
+      "address": "127.0.0.1",
+      "port": 38148,
+      "users": [
+       {
+        "id": "11aaa861-aef4-426e-888f-067d0e209795",
+        "encryption": "none"
+       }
+      ]
+     }
+    ]
+   },
+   "streamSettings": {
+    "network": "xhttp",
+    "security": "reality",
+    "realitySettings": {
+     "serverName": "www.microsoft.com",
+     "fingerprint": "chrome",
+     "publicKey": "k1jQx1-NuC-9Tunn1gyC5krzkHQr8tnF6oYoPd6QdGw",
+     "shortId": "5e9cca74",
+     "spiderX": "/"
+    },
+    "xhttpSettings": {
+     "path": "/k9x2m7",
+     "mode": "auto"
+    }
+   }
+  },
+  {
+   "tag": "direct",
+   "protocol": "freedom"
+  }
+ ],
+ "routing": {
+  "rules": [
+   {
+    "type": "field",
+    "inboundTag": [
+     "socks-in"
+    ],
+    "outboundTag": "vless-out"
+   }
+  ]
+ }
+}

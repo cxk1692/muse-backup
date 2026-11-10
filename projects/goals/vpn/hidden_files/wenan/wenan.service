@@ -1,0 +1,43 @@
+[Unit]
+Description=Wenan copy library (API + admin UI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=wenan
+Group=wenan
+WorkingDirectory=/opt/wenan
+EnvironmentFile=/etc/wenan.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /opt/wenan/app.py
+Restart=on-failure
+RestartSec=3
+MemoryMax=80M
+MemoryHigh=60M
+TasksMax=64
+CPUQuota=50%
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/wenan/data
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+ProtectClock=true
+ProtectHostname=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+RestrictNamespaces=true
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+CapabilityBoundingSet=
+AmbientCapabilities=
+SystemCallArchitectures=native
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

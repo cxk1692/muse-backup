@@ -1,0 +1,32 @@
+AWS Sydney node — deployed 2026-10-30, verified end-to-end (exit IP 3.107.116.153, Sydney AU)
+Instance: vpn-sydney i-05334aee41eaf363b, t3.micro, Ubuntu 24.04, ap-southeast-2
+Panel: 3x-ui v3.11.0 (manual install from official GitHub release tarball; the raw install-script URL was blocked by tooling)
+Panel URL: http://3.107.116.153:2053/617d705d6b50a140/  (HTTP, random path; creds in panel.txt)
+Inbound: id 1, remark sydney-vless, VLESS + XHTTP + Reality, port 38147
+UUID: 11aaa861-aef4-426e-888f-067d0e209795
+Reality privateKey: MAJab7GVZbBWZIT_Fk7jxNGOSo9nC17Qc572YLKeg20
+Reality publicKey: k1jQx1-NuC-9Tunn1gyC5krzkHQr8tnF6oYoPd6QdGw
+shortId: 5e9cca74
+SNI/dest: www.microsoft.com:443, fingerprint chrome, spiderX /
+XHTTP path: /k9x2m7, mode auto
+Client email: kuai, subId: kuai7syd
+SG launch-wizard-1 open ports: 22, 80, 2053, 38147 (all 0.0.0.0/0)
+SSH admin: Muse ed25519 key added to ubuntu authorized_keys (via Instance Connect); kuai-vpn.pem exists only in the browser environment (not retrieved to local disk).
+Share link:
+vless://11aaa861-aef4-426e-888f-067d0e209795@3.107.116.153:38147?encryption=none&security=reality&sni=www.microsoft.com&fp=chrome&pbk=k1jQx1-NuC-9Tunn1gyC5krzkHQr8tnF6oYoPd6QdGw&sid=5e9cca74&spx=%2F&type=xhttp&path=%2Fk9x2m7&mode=auto#sydney-vless-kuai
+Test notes: local Xray client via egress-proxy relay exited at 3.107.116.153 (Sydney, Amazon AS16509). Download via that relay path ~13.8 Mbps (relay bottleneck, not server). User's own Dongguan->Sydney speed still to be felt by kuai.
+
+--- Inbound 2 (added 2026-10-30 21:56, after Shadowrocket XHTTP timeout diagnosis) ---
+Diagnosis: packet capture showed kuai's client (112.97.172.37) completed TCP + sent 517-byte ClientHello; server replied ~8.8KB (camouflage fallback to microsoft) = Reality auth rejected by Shadowrocket's XHTTP+Reality implementation. Same params verified working with real Xray client.
+Inbound: id 2, remark sydney-tcp443, VLESS + TCP + Reality + xtls-rprx-vision, port 443
+Reality privateKey: uERKz47goTOvw3AOhtN3IVh1X3eN3jfWHDKvYd1-Q2M
+Reality publicKey: BGDkXWRfIf1mHiNCULoSCp7gRV8soWwH-0O41-vf1nU
+shortId: bfb59b73
+SNI/dest: www.amazon.com:443, fingerprint chrome, spiderX /
+SG: 443 opened (5 rules total: 22, 80, 443, 2053, 38147)
+Verified end-to-end with local Xray client: exit 3.107.116.153, google204 OK.
+Link: vless://11aaa861-aef4-426e-888f-067d0e209795@3.107.116.153:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.amazon.com&fp=chrome&pbk=BGDkXWRfIf1mHiNCULoSCp7gRV8soWwH-0O41-vf1nU&sid=bfb59b73&spx=%2F&type=tcp#sydney-tcp443
+
+--- Core downgrade 2026-10-30 21:58 ---
+Root cause found via 3x-ui GitHub issues #6543/#6563/#6983: Xray-core >= v26.9.8 REALITY servers only accept clients offering X25519MLKEM768 key share; Shadowrocket's TLS stack does not -> silent timeout on BOTH transports. Panel 3.11.0 bundles core v26.10.21 (affected). Fix applied: server xray binary replaced with v26.6.27 (backup kept at bin/xray-linux-amd64.bak-26.10.21), service restarted, ports 443/38147 listening.
+Post-downgrade regression: tcp443 node verified OK from Xray 26.10.29 client. XHTTP node now returns empty from the 26.10.29 client (likely XHTTP mode negotiation skew between core 26.6 server and 26.10 client) — XHTTP node is secondary; Shadowrocket couldn't use it anyway. Do not upgrade the core back without checking Shadowrocket ML-KEM support first.

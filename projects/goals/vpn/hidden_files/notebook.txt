@@ -1,0 +1,4 @@
+PromptBook (提示词笔记本)
+URL: http://3.107.116.153/nb/
+password: nb-K4XwOTUUIH
+deployed: 2026-10-30

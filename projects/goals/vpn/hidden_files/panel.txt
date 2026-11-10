@@ -1,0 +1,5 @@
+3x-ui panel (AWS Sydney instance 3.107.116.153)
+username: kuai-panel
+password: 5ccc4c561fe61b0c8101fd69
+port: 2053
+note: created 2026-10-30 during deployment; hand to kuai at completion; do not put in MEMORY.md or public files.

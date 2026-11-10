@@ -1,0 +1,54 @@
+schema_version: 1
+relationship_contract:
+  status: unconfigured
+  user_words: null
+  user_label: null
+  permitted_behaviors: []
+  boundaries: []
+  source_message_ids: []
+  review_after: null
+user_facets:
+  model_scope:
+    user_model_completeness: ''
+    rule: ''
+    unknown_frontier: []
+  facets: []
+working_alliance:
+  goal_agreement: []
+  task_agreement: []
+  appropriate_reliance:
+  - dimension: conversational_assistance
+    calibrated: true
+    observation: recent turns were largely correction-free
+    envelope:
+      scope: appropriate reliance on conversational assistance
+      confidence: medium
+      recency: 2026-11-10T03:16:23.749125Z
+      decays_after: 2026-12-25T03:16:23.749125Z
+      sensitivity: low
+      source_state: not_connector_backed
+      source_handle: ''
+      third_party_subjects: false
+  current_frictions: []
+observed_fit:
+  dimensions:
+  - dimension: engagement_depth
+    value: light
+    state: candidate_observed
+    evidence_count: 2
+    envelope:
+      scope: observed conversational engagement depth
+      confidence: low
+      recency: 2026-11-10T03:16:23.749125Z
+      decays_after: 2026-12-25T03:16:23.749125Z
+      sensitivity: low
+      source_state: not_connector_backed
+      source_handle: ''
+      third_party_subjects: false
+proactivity_policies:
+- surface: main_chat
+  stance: reactive
+repair_threads: []
+# reflection_run:
+#   reflected_at: 2026-11-10T03:16:23.749125+00:00
+#   turns_reflected: 4

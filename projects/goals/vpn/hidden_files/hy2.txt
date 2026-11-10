@@ -1,0 +1,7 @@
+
+=== Hysteria2 节点（2026-11-03 新增，与 VLESS 老节点并行）===
+分享链接: hysteria2://Abbw2vocJgVhVvtLgdqEymQ8@3.107.116.153:443?insecure=1&sni=www.amazon.com#sydney-hy2
+参数: 3.107.116.153 UDP 443, 密码 Abbw2vocJgVhVvtLgdqEymQ8, SNI www.amazon.com, 跳过证书验证（自签证书）
+服务: systemd hysteria（独立官方二进制 /usr/local/bin/hysteria，配置 /etc/hysteria/config.yaml，证书自签 CN=www.amazon.com，masquerade 代理到 amazon.com）
+AWS 安全组: 已加 UDP 443 入站（规则 sgr-0627e91a01c664c73）
+老节点（VLESS+TCP+Reality 443）不受影响；Xray 核心仍 v26.6.27，不要升级。

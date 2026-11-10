@@ -1,0 +1,59 @@
+{
+ "log": {
+  "loglevel": "warning"
+ },
+ "inbounds": [
+  {
+   "tag": "socks-in",
+   "listen": "127.0.0.1",
+   "port": 11081,
+   "protocol": "socks",
+   "settings": {
+    "udp": true
+   }
+  }
+ ],
+ "outbounds": [
+  {
+   "tag": "vless-out",
+   "protocol": "vless",
+   "settings": {
+    "vnext": [
+     {
+      "address": "127.0.0.1",
+      "port": 38149,
+      "users": [
+       {
+        "id": "11aaa861-aef4-426e-888f-067d0e209795",
+        "encryption": "none",
+        "flow": "xtls-rprx-vision"
+       }
+      ]
+     }
+    ]
+   },
+   "streamSettings": {
+    "network": "tcp",
+    "security": "reality",
+    "realitySettings": {
+     "serverName": "www.amazon.com",
+     "fingerprint": "chrome",
+     "publicKey": "BGDkXWRfIf1mHiNCULoSCp7gRV8soWwH-0O41-vf1nU",
+     "shortId": "bfb59b73",
+     "spiderX": "/"
+    }
+   }
+  }
+ ],
+ "routing": {
+  "rules": [
+   {
+    "type": "field",
+    "inboundTag": [
+     "socks-in"
+    ],
+    "outboundTag": "vless-out"
+   }
+  ]
+ }
+}

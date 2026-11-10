@@ -1,0 +1,140 @@
+version: 1
+entries:
+  agoda:
+    status: available
+  asana:
+    status: available
+  box:
+    status: available
+  calendly:
+    status: available
+  canva:
+    status: available
+  despegar:
+    status: available
+  dropbox:
+    status: available
+  evernote:
+    status: available
+  expedia:
+    status: available
+  facebook_cli:
+    status: available
+  figma:
+    status: available
+  function_health:
+    status: available
+  ghl:
+    status: available
+  github:
+    status: connected
+  gmail:
+    status: available
+  google_calendar:
+    status: available
+  google_contacts:
+    status: available
+  google_docs:
+    status: available
+  google_drive:
+    status: available
+  google_forms:
+    status: available
+  google_sheets:
+    status: available
+  google_slides:
+    status: available
+  google_tasks:
+    status: available
+  grab_mcp:
+    status: available
+  granola:
+    status: available
+  gumroad_mcp:
+    status: available
+  healthex:
+    status: available
+  imap_email:
+    status: available
+  instacart:
+    status: available
+  instagram:
+    status: available
+  instagram_messages:
+    status: available
+  justpark:
+    status: available
+  kavak:
+    status: available
+  klaviyo:
+    status: available
+  linear:
+    status: available
+  lovable:
+    status: available
+  messenger_read:
+    status: available
+  meta_ads:
+    status: connected
+  moneyforward_me:
+    status: available
+  notion:
+    status: available
+  onepassword:
+    status: available
+  opentable:
+    status: available
+  outlook_calendar:
+    status: available
+  outlook_contacts:
+    status: available
+  outlook_mail:
+    status: available
+  peloton:
+    status: available
+  philips_hue:
+    status: available
+  plaid:
+    status: available
+  printify:
+    status: available
+  quickbooks:
+    status: available
+  rappi_mcp:
+    status: available
+  readwise_mcp:
+    status: available
+  replit:
+    status: available
+  runway_mcp:
+    status: available
+  shopback_mcp:
+    status: available
+  shopify:
+    status: available
+  slack:
+    status: available
+  spotify:
+    status: available
+  stripe:
+    status: available
+  tessie:
+    status: available
+  threads:
+    status: available
+  threads_messages:
+    status: available
+  todoist:
+    status: available
+  uber_courier:
+    status: available
+  vercel:
+    status: available
+  vidiq_mcp:
+    status: available
+  withings:
+    status: available
+  zapier:
+    status: available
+  zoom:
+    status: available

@@ -1,0 +1,9 @@
+皮皮虾去水印工具（pipixia）
+访问地址: http://3.107.116.153/ppx/
+历史记录登录密码: UV0GEXis5-u7f0fk
+服务: systemd pipixia（用户 pipixia，127.0.0.1:8790，MemoryMax 80M，实测约 12MB）
+目录: /opt/pipixia；配置 /etc/pipixia.env（600）；数据库 /opt/pipixia/data/pipixia.db
+外网入口: 主页 Nginx 方案 A 子路径 /ppx/ 反代（443 未动，仍为 3x-ui Reality）
+解析依赖第三方接口 api.bugpk.com（仅发送用户粘贴的皮皮虾链接）
+部署时间: 2026-11-01，部署前已逐行审查 install.sh 与 server.py，无后门/外联异常。
+卸载: sudo bash /opt/pipixia/uninstall.sh（默认保留数据库）
